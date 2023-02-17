@@ -1,0 +1,167 @@
+@charset "UTF_8";
+
+@font-face {
+    font-family: 'speedee';
+    src: url(../fontes/Speedee-Bold.ttf) format(Truetype);
+}
+
+:root {
+    --cor1:#F1212E;
+    --cor2:#F50900;
+    --cor3:#BF1B26;
+    --cor4:#5C0300;
+    --fonte-destaque:'speedee',cursive;
+    --fonte-padrao:Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family:var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1) 32%, var(--cor4));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+header h1 {
+    color: white;
+    text-shadow: 2px 0px 4px #00000075;
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+header p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    color: white;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px #00000075;
+}
+
+nav {
+    text-align: center;
+    margin: 0px;
+    padding: 45px 0px 12px 0px;
+    box-shadow: 3px 5px 5px #00000062;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    color: var(--cor1);
+    transition-duration: 0.5s;
+}
+
+nav a:hover {
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: var(--cor1);
+    color: var(--cor4);
+}
+main {
+    background-color: #ece0e0;
+    margin: auto;
+    margin-bottom: 55px;
+    min-width: 280px;
+    max-width: 850px;
+    padding: 15px;
+    border-radius: 0px 0px 25px 3px;
+    box-shadow: 3px 0px 10px #00000070;
+}
+
+main h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    color: var(--cor4);
+    padding-bottom: 15px;
+}
+
+main h2 {
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    padding: 5px 0px 5px 5px;
+    color: white;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    border-radius: 3px;
+}
+
+main .h2-perto {
+    margin-top: 20px;
+}
+
+main p {
+    padding: 15px;
+    text-align: justify;
+    text-indent: 20px;
+    font-size: 1.1em;
+    line-height: 2em;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor2);
+}
+
+main a:hover {
+    text-decoration: underline;
+    font-size: 19px;
+}
+
+main img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #00000063;
+}
+
+main .imagem-pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.video {
+    background-color: var(--cor2);
+    margin: 0px -5px 25px -5px;
+    padding: 5px;
+    padding-bottom: 56.3%;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 98%;
+    height: 98%;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: var(--cor4);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--cor2);
+    font-size: 20px;
+}
